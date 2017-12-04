@@ -139,9 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="findword.cpp" />
+    <ClCompile Include="getword.c" />
     <ClCompile Include="scan.c" />
-    <ClCompile Include="소스.c" />
+    <ClCompile Include="main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

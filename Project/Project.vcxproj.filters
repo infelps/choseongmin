@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="소스.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="scan.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="findword.cpp">
+    <ClCompile Include="main.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="getword.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
