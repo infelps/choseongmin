@@ -25,7 +25,8 @@ int getWordNum(char* fileName,char* keyword,int wordlength)
 	fread(str, sizeof(char), size, fp);
 	str[size] = NULL;
 	fclose(fp);
-
+	strlwr(str);
+	
 
 	foundstr = strstr(str, keyword);
 	while (foundstr != NULL) {

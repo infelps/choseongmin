@@ -30,6 +30,7 @@ void main()
 	pFileName = getNameFile(num);
 
 	scanf("%s", keyword);
+	strlwr(keyword);
 	wordSize = strlen(keyword);
 
 	for (i = 0; i < num; i++) {
