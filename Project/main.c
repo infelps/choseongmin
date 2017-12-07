@@ -14,7 +14,7 @@ int getNumFile();
 FileLoad *getNameFile(int num);
 int comparesize(void* a, void* b);
 
-void main()
+void main(int argc,char** argv)
 {
 	clock_t start = clock();
 	int num;
@@ -28,8 +28,8 @@ void main()
 	num = getNumFile();
 	FileLoad* pFileName;
 	pFileName = getNameFile(num);
-
-	scanf("%s", keyword);
+	strcpy(keyword, argv[1]);
+	//scanf("%s", keyword);
 	strlwr(keyword);
 	wordSize = strlen(keyword);
 
