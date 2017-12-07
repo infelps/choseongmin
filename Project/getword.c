@@ -3,6 +3,7 @@
 #include<stdlib.h>
 #include<time.h>
 #include<string.h>
+#include<ctype.h>
 
 typedef struct  _FileLoad {
 	char name[260];
@@ -29,8 +30,19 @@ int getWordNum(char* fileName,char* keyword,int wordlength)
 	
 
 	foundstr = strstr(str, keyword);
+
 	while (foundstr != NULL) {
-		num++;
+		num+=10;
+		if (foundstr != str) {
+			if (isalpha((int)*(foundstr - 1)) == 0)
+				num += 3;
+		}
+		else
+			num += 3;
+		if (foundstr != NULL) {
+			if (isalpha((int)*(foundstr + wordlength)) == 0)
+				num += 3;
+		}
 		foundstr += wordlength;
 		foundstr = strstr(foundstr, keyword);
 	}
